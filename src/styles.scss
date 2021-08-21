@@ -1,1 +1,82 @@
-/* You can add global styles to this file, and also import other style files */
+body{
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+    color: white;
+}
+
+// /////////////////////////       Inter  /////////////////////
+
+h1 {
+    font-size: 64px;
+}
+
+h2 {
+    font-size: 36px;
+}
+
+p {
+    font-size: 18px;
+}
+
+button{
+    font-size: 18px;
+    cursor: pointer;
+}
+
+///////////////////////////// Color   /////////////////////////@at-root
+
+.primary {
+    color: #fa2759;
+}
+
+.secondary {
+    color: #2dfcd8;
+}
+
+.grey {
+    color: #1a1a1a;
+}
+
+.black {
+    color: black;
+}
+
+/////////////////// Backgrounds   /////////////////////
+
+.bg-black{
+    background-color: #000000;
+}
+
+.bg-grey{
+    background-color: #1a1a1a;
+}
+
+////////////////////// Buttons   ///////////////////////////
+
+.btn-primary {
+    width: 109px;
+    height: 40px;
+    background-color: transparent;
+    color: #2dfcd8;
+    border: 1px solid #2dfcd8;
+    font-weight: bold;
+
+    &:hover {
+        background-color: #2dfcd8;
+        color: black;
+    }
+}
+
+.btn-secondary {
+    width: 109px;
+    height: 40px;
+    background-color: transparent;
+    color: #fa2759;
+    border: 1px solid #fa2759;
+    font-weight: bold;
+
+    &:hover {
+        color: black;
+        background-color: #fa2759;
+    }
+}

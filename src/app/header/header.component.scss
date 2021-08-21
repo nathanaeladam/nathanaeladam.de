@@ -1,0 +1,26 @@
+header {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    height: 86px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 105px 0 105px;
+
+    img{
+        width: 70px;
+        object-fit: cover;
+    }
+
+    a{
+        color: white;
+        text-decoration: none;
+        padding-left: 60px;
+
+        &:hover{
+            color: #fa2759;
+        }
+    }
+}
