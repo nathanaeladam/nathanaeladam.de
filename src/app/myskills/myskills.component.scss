@@ -1,3 +1,49 @@
-.my-skills{
-    background-color: #1a1a1a;
+.my-skills {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+
+    h2 {
+        margin: 0;
+        padding: 2.5vw 0 3.5vw 0;
+    }
+
+    .skill-container {
+        width: 50vw;
+        height: 80vh;
+        color: black;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+
+        .skill-box {
+            width: 28%;
+            height: 23%;
+            background-color: white;
+            border-radius: 6%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            cursor: pointer;
+
+            img {
+                position: absolute;
+                top: 0;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                width: 18%;
+                height: width;
+                object-fit: cover;
+                z-index: 1;
+            }
+
+            .circle{
+                width: 30%;
+                height: width;
+                z-index: 0;
+            }
+        }
+    }
 }
