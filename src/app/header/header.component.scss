@@ -3,21 +3,23 @@ header {
     top: 0;
     right: 0;
     left: 0;
-    height: 86px;
+    height: 15vh;
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 0 8vw 0 8vw;
 
     img{
-        width: 70px;
+        width: 12vh;
         object-fit: cover;
+        cursor: pointer;
     }
 
     a{
         color: white;
         text-decoration: none;
         padding-left: 60px;
+        font-size: 1em;
 
         &:hover{
             color: #fa2759;
