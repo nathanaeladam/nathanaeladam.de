@@ -1,0 +1,98 @@
+.about-me {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    ////////////////////////////////////////////////    top of site
+    .top {
+        margin-top: 15vh;
+        width: 75vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 40vh;
+        border-bottom: 1px solid #2dfcd8;
+
+        img {
+            width: 30vh;
+            margin-right: 5vw;
+            border-radius: 100%;
+        }
+
+        .text-container {
+            margin-right: 5vw;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+
+            h2 {
+                padding: 0.6em;
+            }
+
+            div{
+                display: flex;
+                justify-content: center;
+            }
+        }
+    }
+
+    ///////////////////////////////////////// bottom of site
+
+    .bottom {
+        margin-top: 15vh;
+        width: 88vw;
+        min-height: 70vh;
+        display: flex;
+        justify-content: space-between;
+
+        .some-about-me{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 23%;
+            height: 50%;
+
+            img{
+                width: 25%;
+                height: width;
+                object-fit: cover;
+                border-radius: 100%;
+                background-color: #2dfcd8;
+                padding: 5%;
+            }
+        }
+    }
+}
+
+@media (max-width:"768px"){
+    .about-me{
+        font-size: 1px !important;
+    }
+}
+
+@media (max-width:"992px") {
+    .about-me{
+        font-size: 4vw !important;
+    }
+
+    .top{
+        display: flex !important;
+        flex-direction: column !important;
+        border-bottom: none !important;
+        width: 95vw !important; 
+
+    }
+
+    .bottom{
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center !important;
+        width: 90vw !important;
+
+        .some-about-me{
+            width: 80% !important;
+            margin: 3em 0 !important;
+        }
+    }
+}

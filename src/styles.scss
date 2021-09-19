@@ -66,6 +66,7 @@ button {
 
 .btn-primary {
     padding: 2% 7%;
+    margin-top: 1em;
     background-color: transparent;
     color: #2dfcd8;
     border: 1px solid #2dfcd8;
@@ -87,5 +88,25 @@ button {
     &:hover {
         color: black;
         background-color: #fa2759;
+    }
+}
+
+.pointer {
+    cursor: pointer;
+}
+
+.stop-scrolling{
+    height: 100%;
+    overflow-y: hidden;
+}
+
+
+@media (max-width:"992px"){
+    .hide-mobile{
+        display: none !important;
+    }
+    
+    .show-mobile{
+        display: flex !important;
     }
 }

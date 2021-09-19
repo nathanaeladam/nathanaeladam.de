@@ -1,0 +1,12 @@
+<div *ngIf="showNavbar" class="sidenav">
+    <a class="closebtn" (click)="closeNav()">&times;</a>
+    <a routerLink="/">Home</a>
+    <a (click)="closeNav()" href="#contactme">coontact me</a>
+    <a routerLink="/data-protection">Data protection</a>
+    <a routerLink="/imprint">Imprint</a>
+</div>
+
+<div class="show-mobile mobile-header">
+    <img routerLink="/" src="assets/img/white-logo.png">
+    <span class="open" (click)="openNav()">&#9776;</span>
+</div>
