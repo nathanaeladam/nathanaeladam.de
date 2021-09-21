@@ -8,7 +8,14 @@
 
 
 @media (max-width:"992px"){
-    
+    .data-protection{
+        padding: 5vw !important;
+        width: 90vw !important;
+
+        h1{
+            font-size: 12vw;
+        }
+    }
 }
 
 @media (max-width:"768px"){
