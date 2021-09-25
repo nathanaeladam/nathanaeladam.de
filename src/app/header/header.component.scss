@@ -8,7 +8,7 @@ header {
     align-items: center;
     justify-content: space-between;
     padding: 0 8vw 0 8vw;
-    font-size: min(24px, 4vw);
+    font-size: calc(16px + 1vw);
 
     img{
         width: 12vh;
