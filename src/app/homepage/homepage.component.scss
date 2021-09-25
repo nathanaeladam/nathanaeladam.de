@@ -33,7 +33,7 @@
     }
 
     button {
-        width: 300px;
+        min-width: min(300px, 90vw);
         height: 80px;
     }
 }
@@ -54,7 +54,6 @@
 
     .homepage{
         padding: 5vw !important;
-        width: 90vw !important;
     }
 
     .homepage-top{
