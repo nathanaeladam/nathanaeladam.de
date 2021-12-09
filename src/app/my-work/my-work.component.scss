@@ -8,19 +8,8 @@
         padding: 8vh 0 8vh;
     }
 
-    .links-container{
-        padding-bottom: 8vh;
-        display: flex;
-        justify-content: center;
-
-        button{
-            margin: 0 1vw;
-            font-size: 3vh;
-        }
-    }
-
     .imgs-container{
-        width: 60vw;
+        width: min(60vw, 900px);
         display: flex;
         justify-content: space-between;
         flex-wrap: wrap;
@@ -41,9 +30,10 @@
 
     .my-work{
         .imgs-container{
+            width: 80vw !important;
             img{
                 width: 100% !important;
-                margin-bottom: 5vw;
+                margin-bottom: 7vw;
             }
         }
     }
