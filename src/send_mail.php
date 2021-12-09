@@ -2,7 +2,7 @@
 
 ########### CONFIG ###############
 
-$recipient = 'nathanaeladam@gmx.de';
+$recipient = 'nathanaeladam@web.de';
 $redirect = 'success.html';
 
 ########### CONFIG END ###########
@@ -40,9 +40,9 @@ switch ($_SERVER['REQUEST_METHOD']) {
         header("Access-Control-Allow-Origin: *");
 
         $subject = "Contact From " . $_POST['name'];
-        $headers = "From:  noreply@developerakademie.com";
+        $headers = "From:  noreply@nathanaeladam.de";
 
-        mail($recipient, $subject, $_POST['message'], $headers);
+        mail($recipient, $subject,"answer at: " . $_POST['email'], $_POST['message'], $headers);
         header("Location: " . $redirect); 
 
         break;
