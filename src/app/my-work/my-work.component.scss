@@ -19,6 +19,10 @@
             margin-bottom: 2.4vw;
             object-fit: cover;
             cursor: pointer;
+
+            &:hover{
+                filter: brightness(0.7);
+            }
         }
     }
 }
