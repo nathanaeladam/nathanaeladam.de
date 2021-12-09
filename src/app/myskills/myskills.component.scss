@@ -3,6 +3,7 @@
     flex-direction: column;
     align-items: center;
     min-height: 100vh;
+    height: min-content !important;
     word-wrap: break-word;
     hyphens: auto;
 
@@ -54,23 +55,40 @@
 
 @media (max-width:"992px"){
     .my-skills{
+        height: min-content !important;
+
         h2 {
             padding: 13vh 0;
             font-size: 5vh;
         }
 
         .skill-container{
-            width: 90vw !important;
+            font-size: min(5vw, 18px);
+            display: flex;
+            height: min-content !important;
+            justify-content: center;
 
             .skill-box{
                 font-size: min(5vw, 18px);
+                display: flex !important;
+                width: 90vw !important;
+                border-radius: 40px !important;
+                height: 80px !important;
 
                 img{
-                    width: 25% !important;
+                    width: 50px !important;
+
+                    position: absolute;
+                    top: 50%;
+                    left: 40px;
+                    transform: translate(-50%, -50%);
+                    height: width;
+                    object-fit: cover;
+                    z-index: 1;
                 }
 
                 .circle{
-                    width: 38% !important;
+                    width: 0 !important;
                 }
             }
         }
