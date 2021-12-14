@@ -37,7 +37,7 @@ button {
 ///////////////////////////// Color   /////////////////////////@at-root
 
 .primary {
-    color: #0e0770;
+    color: #1100ff;
 }
 
 .secondary {
@@ -81,13 +81,13 @@ button {
 .btn-secondary {
     padding: 2% 7%;
     background-color: transparent;
-    color: #0e0770;
-    border: 1px solid #0e0770;
+    color: #1100ff;
+    border: 1px solid #1100ff;
     font-weight: bold;
 
     &:hover {
         color: black;
-        background-color: #0e0770;
+        background-color: #1100ff;
     }
 }
 
@@ -120,7 +120,7 @@ button {
         color: #2dfcd8;
     }
     50% {
-        color: #0e0770;
+        color: #1100ff;
     }
     to {
         color: #2dfcd8;
@@ -129,13 +129,13 @@ button {
 
 @keyframes color-animation-2 {
     from {
-        color: #0e0770;
+        color: #1100ff;
     }
     50% {
         color: #2dfcd8;
     }
     to {
-        color: #0e0770;
+        color: #1100ff;
     }
 }
 
@@ -153,7 +153,7 @@ button {
   
   .tooltip .tooltiptext {
     visibility: hidden;
-    background-color: #1308a5;
+    background-color: #1100ff;
     color: #fff;
     text-align: center;
     padding: 10px;
