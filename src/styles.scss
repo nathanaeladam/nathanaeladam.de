@@ -110,3 +110,32 @@ button {
         display: flex !important;
     }
 }
+
+
+
+////////////////////  animationen    /////////////////////
+
+@keyframes color-animation-1 {
+    from {
+        color: #2dfcd8;
+    }
+    50% {
+        color: #fa2759;
+    }
+    to {
+        color: #2dfcd8;
+    }
+}
+
+@keyframes color-animation-2 {
+    from {
+        color: #fa2759;
+    }
+    50% {
+        color: #2dfcd8;
+    }
+    to {
+        color: #fa2759;
+    }
+}
+
