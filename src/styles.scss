@@ -139,3 +139,33 @@ button {
     }
 }
 
+
+
+
+
+/////// tooltip design /////////////////////////////
+
+.tooltip {
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted black;
+  }
+  
+  .tooltip .tooltiptext {
+    visibility: hidden;
+    background-color: #1308a5;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    border-radius: 10px;
+  
+    /* Position the tooltip */
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    z-index: 1;
+  }
+  
+  .tooltip:hover .tooltiptext {
+    visibility: visible;
+  }
