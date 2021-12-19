@@ -50,11 +50,21 @@
 .animation-1 {
     position: relative;
     animation: color-animation-1 5s infinite;
+
+    &:hover{
+        color: white !important;
+        font-size: 130%;
+    }
 }
 
 .animation-2 {
     position: relative;
     animation: color-animation-2 5s infinite;
+    
+    &:hover{
+        color: white !important;
+        font-size: 130%;
+    }
 }
 
 @media (max-width: "992px") {
