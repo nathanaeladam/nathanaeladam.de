@@ -1,18 +1,47 @@
 <div class="my-work bg-black">
     <h2>My work</h2>
 
+    <div class="selection-container">
+        <a (click)="showAll()" class="rainbow_text_animated_hover button2">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            All 
+        </a>
+        <a (click)="show1()" class="rainbow_text_animated_hover button2">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            Java script
+        </a>
+        <a (click)="show2()" class="rainbow_text_animated_hover button2">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            Angular
+        </a>
+    </div>
+
     <div class="imgs-container">
-        <a class="tooltip" href="https://ring-of-fire-2d985.firebaseapp.com"><img src="assets/img/project-ringoffire.png">
+        <a *ngIf="showAngular" class="tooltip" href="https://ring-of-fire-2d985.firebaseapp.com"><img
+                src="assets/img/project-ringoffire.png">
             <span class="tooltiptext">click on the picture to test</span></a>
-        <a class="tooltip" href="http://nathanael-adam.developerakademie.com/lieferando/"><img src="assets/img/project-lieferando.png">
+        <a *ngIf="showJavascript" class="tooltip" href="http://nathanael-adam.developerakademie.com/lieferando/"><img
+                src="assets/img/project-lieferando.png">
             <span class="tooltiptext">click on the picture to test</span></a>
-        <a class="tooltip" href="http://nathanael-adam.developerakademie.com/instagram/"><img src="assets/img/project-instagram.png">
+        <a *ngIf="showJavascript" class="tooltip" href="http://nathanael-adam.developerakademie.com/instagram/"><img
+                src="assets/img/project-instagram.png">
             <span class="tooltiptext">click on the picture to test</span></a>
-        <a class="tooltip" href="http://nathanael-adam.developerakademie.com/tictactoe/"><img src="assets/img/project-tictactoe.png">
+        <a *ngIf="showJavascript" class="tooltip" href="http://nathanael-adam.developerakademie.com/tictactoe/"><img
+                src="assets/img/project-tictactoe.png">
             <span class="tooltiptext">click on the picture to test</span></a>
-        <a class="tooltip" href="http://nathanael-adam.developerakademie.com/tictactoe/"><img src="assets/img/project-tictactoe.png">
+        <a *ngIf="showJavascript" class="tooltip" href="http://nathanael-adam.developerakademie.com/tictactoe/"><img
+                src="assets/img/project-tictactoe.png">
             <span class="tooltiptext">click on the picture to test</span></a>
-        <a class="tooltip" href="http://nathanael-adam.developerakademie.com/quizapp/"><img src="assets/img/project-quizapp.png"> <span
-                class="tooltiptext">click on the picture to test</span></a>
+        <a *ngIf="showJavascript" class="tooltip" href="http://nathanael-adam.developerakademie.com/quizapp/"><img
+                src="assets/img/project-quizapp.png"> <span class="tooltiptext">click on the picture to test</span></a>
     </div>
 </div>

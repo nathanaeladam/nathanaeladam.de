@@ -12,4 +12,22 @@ export class MyWorkComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  showAngular = true;
+  showJavascript = true;
+
+
+  showAll() {
+    this.showAngular = true;
+    this.showJavascript = true;
+  }
+
+  show1(){
+    this.showAngular = false;
+    this.showJavascript = true;
+  }
+  
+  show2(){
+    this.showAngular = true;
+    this.showJavascript = false;
+  }
 }
