@@ -117,7 +117,7 @@ button {
         color: #2dfcd8;
     }
     50% {
-        color: #009ddb;
+        color: #011097;
     }
     to {
         color: #2dfcd8;
@@ -126,13 +126,13 @@ button {
 
 @keyframes color-animation-2 {
     from {
-        color: #009ddb;
+        color: #011097;
     }
     50% {
         color: #2dfcd8;
     }
     to {
-        color: #009ddb;
+        color: #011097;
     }
 }
 
@@ -283,3 +283,39 @@ button {
     }
   }
   
+
+  /////////////////////////// rainbow animation ////////////////////////////
+  .rainbow_text_animated_hover{
+    &:hover{
+    background: linear-gradient(to right, #6666ff, #0099ff , #00ff00, #ff3399, #6666ff);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    animation: rainbow_animation 4s ease-in-out infinite;
+    background-size: 400% 100%;
+    }
+  }
+.rainbow_text_animated {
+    background: linear-gradient(to right, #6666ff, #0099ff , #00ff00, #ff3399, #6666ff);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    animation: rainbow_animation 6s ease-in-out infinite;
+    background-size: 400% 100%;
+
+     
+    &:hover{
+      color: white !important;
+      font-size: 130%;
+  }
+}
+
+@keyframes rainbow_animation {
+    0%,100% {
+        background-position: 0 0;
+    }
+
+    50% {
+        background-position: 100% 0;
+    }
+}
