@@ -1,321 +1,173 @@
 html {
-    scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
 
 body {
-    margin: 0;
-    font-family: "Inter", sans-serif;
-    color: white;
+  margin: 0;
+  font-family: "Inter", sans-serif;
+  color: white;
 }
 
 // /////////////////////////       Inter  /////////////////////
 
 h1 {
-    font-size: 10vh;
-    margin: 0;
+  font-size: 10vh;
+  margin: 0;
 }
 
 h2 {
-    font-size: 36px;
-    margin: 0;
+  font-size: 36px;
+  margin: 0;
 }
 
 p {
-    font-size: 18px;
+  font-size: 18px;
 }
 
 a {
-    cursor: pointer;
-    text-decoration: none;
+  cursor: pointer;
+  text-decoration: none;
 }
 
 button {
-    cursor: pointer;
-    font-size: 4vh;
+  cursor: pointer;
+  font-size: 4vh;
 }
 
 ///////////////////////////// Color   /////////////////////////@at-root
 
 .primary {
-    color: #1100ff;
+  color: #fa2759;
 }
 
 .secondary {
-    color: #2dfcd8;
+  color: #2dfcd8;
 }
 
 .grey {
-    color: #1a1a1a;
+  color: #1a1a1a;
 }
 
 .black {
-    color: black;
+  color: black;
 }
 
 /////////////////// Backgrounds   /////////////////////
 
 .bg-black {
-    background-color: #000000;
+  background-color: #000000;
 }
 
 .bg-grey {
-    background-color: #1a1a1a;
+  background-color: #1a1a1a;
 }
 
 ////////////////////// Buttons   ///////////////////////////
 
 .btn-primary {
-    padding: 2% 7%;
-    margin-top: 1em;
-    background-color: transparent;
-    color: #2dfcd8;
-    border: 1px solid #2dfcd8;
-    font-weight: bold;
+  padding: 2% 7%;
+  margin-top: 1em;
+  background-color: transparent;
+  color: #2dfcd8;
+  border: 3px solid #2dfcd8;
+  font-weight: bold;
+  border-radius: 3px;
 
-    &:hover {
-        background-color: #2dfcd8;
-        color: black;
-    }
+  &:hover {
+    background-color: #2dfcd8;
+    color: black;
+  }
 }
 
 .btn-secondary {
-    padding: 2% 7%;
-    background-color: transparent;
-    color: #1100ff;
-    border: 1px solid #1100ff;
-    font-weight: bold;
+  padding: 2% 7%;
+  background-color: transparent;
+  color: #fff;
+  border: 3px solid #fa2759;
+  border-radius: 3px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  margin: 16px;
 
-    &:hover {
-        color: black;
-        background-color: #1100ff;
-    }
+  &:hover {
+    color: #fff;
+    background-color: #fa2759;
+  }
 }
 
 .pointer {
-    cursor: pointer;
+  cursor: pointer;
 }
 
 .stop-scrolling {
-    height: 100%;
-    overflow-y: hidden;
+  height: 100%;
+  overflow-y: hidden;
 }
 
 @media (max-width: "992px") {
-    .hide-mobile {
-        display: none !important;
-    }
+  .hide-mobile {
+    display: none !important;
+  }
 
-    .show-mobile {
-        display: flex !important;
-    }
-}
-
-////////////////////  animationen    /////////////////////
-
-@keyframes color-animation-1 {
-    from {
-        color: #2dfcd8;
-    }
-    50% {
-        color: #011097;
-    }
-    to {
-        color: #2dfcd8;
-    }
-}
-
-@keyframes color-animation-2 {
-    from {
-        color: #011097;
-    }
-    50% {
-        color: #2dfcd8;
-    }
-    to {
-        color: #011097;
-    }
+  .show-mobile {
+    display: flex !important;
+  }
 }
 
 /////// tooltip design /////////////////////////////
 
 .tooltip {
-    position: relative;
-    display: inline-block;
-    border-bottom: 1px dotted black;
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted black;
 }
 
 .tooltip .tooltiptext {
-    visibility: hidden;
-    background-color: #1100ff;
-    color: #fff;
-    text-align: center;
-    padding: 10px;
-    border-radius: 10px;
+  visibility: hidden;
+  background-color: #fa2759;
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+  border-radius: 10px;
 
-    /* Position the tooltip */
-    position: absolute;
-    top: 20px;
-    left: 20px;
-    z-index: 1;
+  /* Position the tooltip */
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  z-index: 1;
 }
 
 .tooltip:hover .tooltiptext {
-    visibility: visible;
+  visibility: visible;
 }
 
 
+/////// text hover /////////////////////////
 
 
-
-
-
-
-
-
-
-//////////// button from contact me ///////////////////////////
-
-
-.button2 {
-    //min-width: min(300px, 90vw);
-    //height: 80px;
-    position: relative;
-    display: inline-block;
-    padding: 30px 61px;
-    border-radius: 4px;
-    color: #2dfcd8;
-    text-decoration: none;
-    text-transform: uppercase;
-    overflow: hidden;
-    margin: 25px;
-    font-family: "Roboto", sans-serif;
-    filter: hue-rotate(0deg);
-    border: 2px solid #2dfcd8;
-    transition: all 0.1s linear;
-  
-    &:hover {
-      border: 1px solid transparent;
-      span {
-        position: absolute;
-        display: block;
-  
-        &:nth-child(1) {
-          filter: hue-rotate(0deg);
-          top: 0;
-          left: 0;
-          width: 100%;
-          height: 3px;
-          background: linear-gradient(90deg, transparent, #3a86ff);
-          animation: animate1 1s linear infinite;
-        }
-        @keyframes animate1 {
-          0% {
-            left: -100%;
-          }
-          50%,
-          100% {
-            left: 100%;
-          }
-        }
-  
-        &:nth-child(2) {
-          filter: hue-rotate(60deg);
-          top: -100%;
-          right: 0;
-          width: 3px;
-          height: 100%;
-          background: linear-gradient(180deg, transparent, #3a86ff);
-          animation: animate2 1s linear infinite;
-          animation-delay: 0.25s;
-        }
-  
-        @keyframes animate2 {
-          0% {
-            top: -100%;
-          }
-          50%,
-          100% {
-            top: 100%;
-          }
-        }
-        &:nth-child(3) {
-          filter: hue-rotate(120deg);
-          bottom: 0;
-          right: 0;
-          width: 100%;
-  
-          background: linear-gradient(270deg, transparent, #3a86ff);
-          animation: animate3 1s linear infinite;
-          animation-delay: 0.5s;
-        }
-        @keyframes animate3 {
-          0% {
-            right: -100%;
-            height: 3px;
-          }
-          50%,
-          100% {
-            height: 2px;
-            right: 100%;
-          }
-        }
-  
-        &:nth-child(4) {
-          filter: hue-rotate(300deg);
-          bottom: -100%;
-          left: 0;
-          width: 3px;
-          height: 100%;
-          background: linear-gradient(360deg, transparent, #3a86ff);
-          animation: animate4 1s linear infinite;
-          animation-delay: 0.75s;
-        }
-        @keyframes animate4 {
-          0% {
-            bottom: -100%;
-          }
-          50%,
-          100% {
-            bottom: 100%;
-          }
-        }
-      }
-    }
-  }
-  
-
-  /////////////////////////// rainbow animation ////////////////////////////
-  .rainbow_text_animated_hover{
-    &:hover{
-    background: linear-gradient(to right, #6666ff, #0099ff , #00ff00, #ff3399, #6666ff);
-    -webkit-background-clip: text;
-    background-clip: text;
-    color: transparent ;
-    animation: rainbow_animation 6s ease-in-out infinite;
-    background-size: 400% 100%;
-    }
-  }
-.rainbow_text_animated {
-    background: linear-gradient(to right, #6666ff, #0099ff , #00ff00, #ff3399, #6666ff);
-    -webkit-background-clip: text;
-    background-clip: text;
-    color: transparent;
-    animation: rainbow_animation 6s ease-in-out infinite;
-    background-size: 400% 100%;
-
-     
-    &:hover{
-      color: white !important;
-      font-size: 130%;
+.hover-big {
+  &:hover {
+    font-size: 130% !important;
   }
 }
 
-@keyframes rainbow_animation {
-    0%,100% {
-        background-position: 0 0;
-    }
 
-    50% {
-        background-position: 100% 0;
-    }
+.hover-white{
+  &:hover{
+    color: #fff !important;
+  }
+}
+
+.hover-primary {
+  &:hover {
+    color: #fa2759 !important;
+  }
+}
+
+.hover-secondary {
+  &:hover {
+    color: #2dfcd8 !important;
+  }
 }

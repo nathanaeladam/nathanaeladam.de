@@ -2,25 +2,13 @@
     <h2>My work</h2>
 
     <div class="selection-container">
-        <a (click)="showAll()" class="rainbow_text_animated_hover button2">
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
+        <a (click)="showAll()" class="btn-secondary" [class.aktive]="aktiveButton ===1">
             All 
         </a>
-        <a (click)="show1()" class="rainbow_text_animated_hover button2">
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
+        <a (click)="show1()" class="btn-secondary" [class.aktive]="aktiveButton ===2">
             Java script
         </a>
-        <a (click)="show2()" class="rainbow_text_animated_hover button2">
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
+        <a (click)="show2()" class="btn-secondary" [class.aktive]="aktiveButton ===3">
             Angular
         </a>
     </div>

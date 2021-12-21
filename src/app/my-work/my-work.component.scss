@@ -16,13 +16,13 @@
     }
 
     .imgs-container {
-        width: min(60vw, 900px);
+        width: min(80vw, 1000px);
         display: flex;
         justify-content: space-between;
         flex-wrap: wrap;
 
         img {
-            width: 100%;
+            width: min(38vw, 480px) !important;
             margin-bottom: 2.4vw;
             object-fit: cover;
             cursor: pointer;
@@ -32,6 +32,10 @@
             }
         }
     }
+}
+
+.aktive{
+    background-color: #fa2759;
 }
 
 @media (max-width: "992px") {
