@@ -34,7 +34,8 @@
 
     button {
         min-width: min(300px, 90vw);
-        height: 80px;
+        min-height: 80px;
+        padding: 1em;
     }
 }
 
