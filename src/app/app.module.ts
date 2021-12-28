@@ -14,6 +14,7 @@ import { MobileHeaderComponent } from './mobile-header/mobile-header.component';
 import { HomescreenComponent } from './homescreen/homescreen.component';
 import { ImprintComponent } from './imprint/imprint.component';
 import { DataProtectionComponent } from './data-protection/data-protection.component';
+import { PathLocationStrategy, LocationStrategy } from '@angular/common';
 
 @NgModule({
   declarations: [
@@ -34,7 +35,8 @@ import { DataProtectionComponent } from './data-protection/data-protection.compo
     BrowserModule,
     AppRoutingModule
   ],
-  providers: [],
+
+  providers: [{provide: LocationStrategy, useClass: PathLocationStrategy}],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
