@@ -36,7 +36,7 @@ import { PathLocationStrategy, LocationStrategy } from '@angular/common';
     AppRoutingModule
   ],
 
-  providers: [{provide: LocationStrategy, useClass: PathLocationStrategy}],
+  //providers: [{provide: LocationStrategy, useClass: PathLocationStrategy}],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
