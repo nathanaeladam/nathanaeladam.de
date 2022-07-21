@@ -2,20 +2,19 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    min-height: 100vh;
     height: min-content !important;
     word-wrap: break-word;
     hyphens: auto;
 
     h2 {
         margin: 0;
-        padding: 15vh 0;
+        padding: 7vh 0;
         font-size: 5vh;
     }
 
     .skill-container {
         width: 50vw;
-        height: 80vh;
+        height: 33vw;
         color: black;
         display: flex;
         flex-wrap: wrap;
@@ -32,6 +31,7 @@
             justify-content: center;
             align-items: center;
             position: relative;
+            word-wrap: break-word;
 
             img {
                 position: absolute;
@@ -44,7 +44,7 @@
                 z-index: 1;
             }
 
-            .circle{
+            .circle {
                 width: 30%;
                 height: width;
                 z-index: 0;
@@ -53,30 +53,30 @@
     }
 }
 
-@media (max-width:"992px"){
-    .my-skills{
+@media (max-width: "1200px") {
+    .my-skills {
         height: min-content !important;
 
         h2 {
-            padding: 13vh 0;
+            padding: 5vh 0;
             font-size: 5vh;
         }
 
-        .skill-container{
+        .skill-container {
             width: min(80vw, 400px) !important;
             font-size: min(5vw, 18px);
             display: flex;
             height: min-content !important;
             justify-content: center;
 
-            .skill-box{
+            .skill-box {
                 font-size: min(5vw, 18px);
                 display: flex !important;
                 width: 90vw !important;
                 border-radius: 40px !important;
                 height: 80px !important;
 
-                img{
+                img {
                     width: 50px !important;
 
                     position: absolute;
@@ -88,7 +88,7 @@
                     z-index: 1;
                 }
 
-                .circle{
+                .circle {
                     width: 0 !important;
                 }
             }
@@ -96,6 +96,5 @@
     }
 }
 
-@media (max-width:"768px"){
-    
+@media (max-width: "768px") {
 }

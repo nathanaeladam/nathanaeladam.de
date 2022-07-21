@@ -10,28 +10,26 @@ header {
     padding: 0 8vw 0 8vw;
     font-size: calc(16px + 1vw);
 
-    img{
+    img {
         width: 12vh;
         object-fit: cover;
         cursor: pointer;
     }
 
-    a{
+    a {
         color: white;
         text-decoration: none;
         padding-left: 60px;
         font-size: 1em;
 
-        &:hover{
+        &:hover {
             color: #fa2759;
         }
     }
 }
 
-@media (max-width:"992px"){
-    
+@media (max-width: "992px") {
 }
 
-@media (max-width:"768px"){
-    
+@media (max-width: "768px") {
 }

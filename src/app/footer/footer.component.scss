@@ -1,13 +1,13 @@
 .footer {
     height: 25vh;
-    background-color: white;
+    background-color: #2dfcd8;
     color: black;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 0 8vw;
 
-    img{
+    img {
         width: 10vh;
         height: width;
         object-fit: cover;
@@ -15,38 +15,36 @@
         padding: 0 1.5em;
     }
 
-    .container{
+    .container {
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
 
-        div{
+        div {
             padding: 2% 0;
         }
     }
 }
 
-@media (max-width:"992px"){
-    .footer{
+@media (max-width: "992px") {
+    .footer {
         display: flex;
         flex-direction: column-reverse;
         align-items: center;
         height: unset;
 
-        .img-container{
+        .img-container {
             padding: 1em 0;
             width: 100%;
             display: flex;
             justify-content: space-between;
         }
-        img{
+        img {
             padding: 0;
         }
     }
 }
 
-
-@media (max-width:"768px"){
-    
+@media (max-width: "768px") {
 }

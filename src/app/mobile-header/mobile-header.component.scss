@@ -42,36 +42,34 @@
     justify-content: space-between;
     background-color: black;
 
-    img{
+    img {
         height: 12vh;
         width: height;
         margin-left: 5vw;
     }
 
-    span{
+    span {
         font-size: 12vh;
         color: white;
     }
 }
 
-.img-container{
+.img-container {
     display: flex;
     justify-content: space-around;
     width: 100%;
     margin-top: 3em;
 
-    a{
+    a {
         padding: 0 !important;
     }
-    img{
+    img {
         width: 50px;
     }
 }
 
-@media (max-width:"992px"){
-    
+@media (max-width: "992px") {
 }
 
-@media (max-width:"768px"){
-    
+@media (max-width: "768px") {
 }
